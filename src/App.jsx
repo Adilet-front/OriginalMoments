@@ -27,7 +27,7 @@ const translations = {
     socialSubtitle: 'Подписывайтесь на каналы, где я буду публиковать все обновления.',
     socialLinks: {
       github: 'GitHub',
-      discord: 'Discord',
+      Instagram: 'Instagram',
       x: 'X (Twitter)',
       bluesky: 'Bluesky',
     },
@@ -49,7 +49,7 @@ const translations = {
     socialSubtitle: 'Follow the channels where I will post all updates.',
     socialLinks: {
       github: 'GitHub',
-      discord: 'Discord',
+      Instagram: 'Instagram',
       x: 'X (Twitter)',
       bluesky: 'Bluesky',
     },
@@ -71,7 +71,7 @@ const translations = {
     socialSubtitle: 'Бардык жаңылыктарды ушул каналдарга чыгарам, катталып коюңуз.',
     socialLinks: {
       github: 'GitHub',
-      discord: 'Discord',
+      Instagram: 'Instagram',
       x: 'X (Twitter)',
       bluesky: 'Bluesky',
     },
@@ -85,19 +85,19 @@ const socialPlatforms = [
     href: 'https://github.com/Adilet-front',
   },
   {
-    key: 'discord',
+    key: 'Instagram',
     icon: 'discord-icon',
-    href: 'https://discord.com/users/@your_username',
+    href: 'https://www.instagram.com/english_original_moments/',
   },
   {
     key: 'x',
     icon: 'x-icon',
-    href: 'https://x.com/your_username',
+    href: 'https://x.com/Origina1Moments',
   },
   {
     key: 'bluesky',
     icon: 'bluesky-icon',
-    href: 'https://bsky.app/profile/your-handle.bsky.social',
+    href: 'https://bsky.app/profile/OriginalMoments.bsky.social',
   },
 ]
 
@@ -173,18 +173,18 @@ function App() {
         </div>
 
         <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
+          {/* <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
-          </svg>
+          </svg> */}
           <h2>{t.socialTitle}</h2>
           <p>{t.socialSubtitle}</p>
           <ul>
             {socialPlatforms.map((platform) => (
               <li key={platform.key}>
                 <a href={platform.href} target="_blank" rel="noreferrer">
-                  <svg className="button-icon" role="presentation" aria-hidden="true">
+                  {/* <svg className="button-icon" role="presentation" aria-hidden="true">
                     <use href={`/icons.svg#${platform.icon}`}></use>
-                  </svg>
+                  </svg> */}
                   {t.socialLinks[platform.key]}
                 </a>
               </li>
